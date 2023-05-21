@@ -1,0 +1,29 @@
+.footer{
+    background-color: rgb(29, 62, 82);
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.container-footer{
+    color: aliceblue;
+    font-weight: 550;
+    font-size: medium;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-footer a {
+    color: rgb(124, 236, 240);
+}
+
+.contact{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 5px;
+}
+.contact a{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: rgb(124, 236, 240);
+}

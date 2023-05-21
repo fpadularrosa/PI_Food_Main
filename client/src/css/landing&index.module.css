@@ -1,0 +1,174 @@
+.initial{
+    background-image: url('https://tastebotte.com/wp-content/uploads/2020/01/our-story.jpg');
+		background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+
+.back{
+	border: none;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 0.9rem;
+    margin-right: 1000px;
+}
+.back:hover{
+    transition: background-color 0.25s;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #303030;
+}
+
+.name{
+	font-family: Tahoma, 'Geneva', sans-serif;
+	color: #333333;
+	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+	font-style: italic;
+	font-variant: normal;
+}
+
+
+.details{
+	color: #000000;
+	font-style: italic;
+	text-decoration: underline;
+}
+.container h3{
+	color: #333333;
+}
+.details2{
+	font-size: 15px;
+	word-spacing: 1px;
+	color: #000000;
+	font-weight: 600;
+	font-style:oblique;
+}
+
+.details2 p{
+	color: rgb(255, 255, 255);
+}
+
+.landing{
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.landing:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.landing:active {
+	position:relative;
+	top:1px;
+}
+
+.lanTitle{
+font-family: Lucida Sans Unicode;
+color: #ffffff;
+font-size: 30px; 
+text-transform: uppercase; 
+font-weight: bold; 
+font-style: italic; 
+text-shadow: 4px 3px 0px #7A7A7A;
+}
+
+.imageDetail{
+	width: 100%;
+	outline: 8px inset #32588C;
+	outline-offset: 0px;
+	-webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 6px 6px 7px -1px rgba(0,0,0,0); 
+	box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 6px 6px 7px -1px rgba(0,0,0,0);
+}
+
+.container{
+	background-position: center;
+	background-size: contain;
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	background-color: hsla(202, 69%, 61%, 0.904);
+	gap: 20px 20px 20px 20px;
+}
+
+.containerDetail1{
+	background-image: linear-gradient( 95.2deg, rgb(52, 65, 252) 26.8%, rgba(192,229,246,1) 64% )
+}
+
+.image{
+	width: 290px;
+	height: 230px;
+	margin: auto;
+	box-shadow: #63c5f3 -1px 3px 7px 7px;
+}
+
+.containerDetail2{
+	background-image: linear-gradient( 95.2deg, rgb(41, 165, 236) 26.8%, rgb(24, 56, 143) 64% );
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: right;
+}
+
+.leftContainer{
+	display: flex;
+	width: 30%;
+	color: white;
+	flex-direction: column;
+	margin: 0 15px;
+	text-align: left;
+	text-align: justify;
+}
+
+.rightContainer{
+	display: flex;
+	width: 30%;
+	color: white;
+	flex-direction: column;
+	margin: 0 15px;
+	text-align: justify;
+}
+
+.middleContainer{
+	display: flex;
+	width: 30%;
+	flex-direction: column;
+	margin: auto 15px;
+	align-content: center;
+}
+.title{
+	width: 100%;
+	font-family: Tahoma, 'Geneva', sans-serif;
+	color: #333333;
+	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+	font-style: italic;
+	font-variant: normal;
+}
+.instr{
+	width: 100%;
+	margin: 0 30px;
+}
+.diets{
+	font-size: 22px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}

@@ -1,0 +1,42 @@
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+}
+.input {
+    border-color: rgb(20, 151, 127);
+    border-width: 1px;
+    border-radius: 5px;
+}
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+.btn:hover{
+    transition: background-color 0.25s;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #303030;
+}
+.filters{
+    display: flex;
+    flex-direction: row;
+}
+.formBar{
+    display:flex;
+    flex-direction: row;
+}
+.label,
+.select{
+    margin-left: 20px;
+}

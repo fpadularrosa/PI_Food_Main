@@ -1,0 +1,14 @@
+.btn{
+    border: transparent;
+    color: rgb(255, 255, 255);
+    background: #0ce3ff;
+    margin: 0 7px 10px 5px;
+    border-radius: 9px;
+    height: 28px;
+    width: 30px;
+}
+.btn:hover{
+    cursor: pointer;
+    border: 2px solid #000000;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}

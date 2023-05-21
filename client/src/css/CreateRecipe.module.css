@@ -1,0 +1,85 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputs,
+.inputStep {
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    width: 200px;
+    height: 25px;
+}
+
+.inputStep{
+    width: 450px;
+    height: 200px;
+}
+
+.danger{
+    border:1.5px solid Tomato;
+    border-radius: 2%;
+}
+.p1{
+    margin-top: 0%;
+    font-size: smaller;
+    color: black;
+}
+.back{
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 0.9rem;
+    margin-right: 1000px;
+}
+.back:hover{
+    transition: background-color 0.25s;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #303030;
+}
+        
+.create{
+    color: #333333;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+        
+.fondo{
+    background-image: url(../lg.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.minion img{
+    position: absolute;
+    width: 20%;
+    left: 10px;
+    bottom: -100px;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 0.9rem;
+    margin-left: 15px;
+    color:rgb(185, 185, 185);
+}
+.btn:hover{
+    transition: background-color 0.25s;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #303030;
+}
+.label{
+    font-size: 1.1rem;
+    color: #303030;
+}
