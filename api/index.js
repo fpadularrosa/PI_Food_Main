@@ -24,7 +24,7 @@ const { saveDiets } = require('./src/utils')
 
 conn.sync({ force: false }).then(async () => {
   await saveDiets();
-  server.listen(process.env.PORT, () => {
+  server.listen(3001, () => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
   });
 });

@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 import dotenv from 'dotenv';
 dotenv.config();
 
-axios.defaults.baseURL = 'https://pifood-production-ec08.up.railway.app/';
+axios.defaults.baseURL = 'http://localhost:3001';
 
 ReactDOM.render(
   <React.StrictMode>

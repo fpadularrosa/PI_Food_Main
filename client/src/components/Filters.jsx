@@ -6,12 +6,7 @@ import s from '../css/SearchBar.module.css';
 const Filters = () => {
     const [order, setOrder] = useState('');
     const dispatch = useDispatch();
-    const diets = useSelector(state => state?.diets);
     
-    useEffect(() => {
-        console.log(diets)
-    }, [])
-
     useEffect(() => {
         dispatch(alphabeticalSort(order))
     },[order, dispatch])

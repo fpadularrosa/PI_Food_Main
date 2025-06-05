@@ -64,9 +64,9 @@ const CreateRecipe = props => {
         dispatch(getDiets())
     },[dispatch]);
 
-    useEffect(() => {
-        setErrors(validate(state))
-    },[state.name, state.summary, state.score, state.healthScore, state.steps, state.diets, state.dishtype, state])
+    // useEffect(() => {
+    //     setErrors(validate(state))
+    // },[state.name, state.summary, state.score, state.healthScore, state.steps, state.diets, state.dishtype])
 
 
     return(

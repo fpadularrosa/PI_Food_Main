@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import CreateRecipe from './components/CreateRecipe';
 import { Link } from "react-router-dom";
+import { getRecipes } from './redux/actions';
 
 function App() {
 

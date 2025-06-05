@@ -4,24 +4,15 @@ const apiKey = process.env.apiKey;
 const fetch = require('node-fetch');
 const { Op } = require('sequelize');
 const { Recipe, Diet } = require('../db.js');
-const { urlRecipesDetails } = require('../utils.js');
 require('events').EventEmitter.defaultMaxListeners = 15;
 const router = Router();
-const cors = require('cors');
 
-const corsOptions = {
-    origin: [
-      'https://henryfood.vercel.app/',
-      'http://localhost:3000'
-    ]
-};
-
-router.get('/recipes', cors(corsOptions), async (req, res) => {
+router.get('/recipes', async (req, res) => {
     const { name } = req.query;
 
-    let { results } = await (await fetch(urlRecipesDetails)).json();
+    let { results } = await (await fetch(`https://api.spoonacular.com/recipes/complexSearch?number=100&apiKey=${apiKey}&addRecipeInformation=true`)).json();
 
-    const recipesAPI = results?.map(recipe => {
+    let recipesAPI = results?.map(recipe => {
         return {
             id: recipe.id,
             name: recipe.title,
@@ -57,9 +48,6 @@ router.get('/recipes', cors(corsOptions), async (req, res) => {
 });
 
 router.get('/recipes/:idReceta', async (req, res)=> {
-    //Obtener el detalle de una receta en particular
-    //Debe traer solo los datos pedidos en la ruta de detalle de receta
-    //Incluir los tipos de dieta asociados
     const { idReceta } = req.params;
 
     let totalDetails;
@@ -81,17 +69,13 @@ router.get('/recipes/:idReceta', async (req, res)=> {
     res.json(details);
 });
 
-router.get('/types', cors(corsOptions), async (req, res) => {
-    //Obtener todos los tipos de dieta posibles
-    //En una primera instancia, cuando no exista ninguno, deberán precargar la base de datos con los tipos de datos indicados por spoonacular acá
+router.get('/types', async (req, res) => {
     const diets = await Diet.findAll();
 
     res.json(diets);
 })
 
 router.post('/recipe', async (req, res) => {
-    //Recibe los datos recolectados desde el formulario controlado de la ruta de creación de recetas por body
-    //Crea una receta en la base de datos
     const { name, summary, score, healthScore, steps, diets, image, dishtype } = req.body;
 
     const newRecipe = Recipe.create({
